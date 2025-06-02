@@ -7,7 +7,7 @@ int main() {
     char codigo1[10] = "A01";
     char nomeCidade1[20] = "Santiago";
     int populacao1 = 868075;
-    float area1 = 1391.77;
+    float area1 = 1391.770; // em km²
     float pib1 = 20.510; // em bilhões de reais
     int pontosTuristicos1 = 20;
 
@@ -16,7 +16,7 @@ int main() {
     char codigo2[10] = "B02";
     char nomeCidade2[20] = "Lima";
     int populacao2 = 1014000;
-    float area2 = 834.780;
+    float area2 = 834.780; // em km²
     float pib2 = 31.100; // em bilhões de reais
     int pontosTuristicos2 = 18;
 

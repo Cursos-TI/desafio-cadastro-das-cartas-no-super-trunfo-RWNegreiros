@@ -1,1 +1,69 @@
-Comparação de cartas no Super Trunfo!
+#include <stdio.h>
+
+int main() {
+    printf("Super Trunfo Países!\n\n");
+
+    // -------------------------
+    // Dados da Carta 1 - Santiago, Chile
+    // -------------------------
+    char pais1[20] = "Chile";
+    char codigo1[10] = "A01";
+    char nomeCidade1[20] = "Santiago";
+    int populacao1 = 868075;
+    float area1 = 1391.770; // em km²
+    float pib1 = 20.510; // PIB em bilhões de reais
+    int pontosTuristicos1 = 20;
+
+    // -------------------------
+    // Dados da Carta 2 - Lima, Peru
+    // -------------------------
+    char pais2[20] = "Peru";
+    char codigo2[10] = "B02";
+    char nomeCidade2[20] = "Lima";
+    int populacao2 = 1014000;
+    float area2 = 834.780; // em km²
+    float pib2 = 31.100; // PIB em bilhões de reais
+    int pontosTuristicos2 = 18;
+
+    // -------------------------
+    // Exibição dos dados da Carta 1
+    // -------------------------
+    printf("Carta 1:\n");
+    printf("País: %s\n", pais1);
+    printf("Código: %s\n", codigo1);
+    printf("Cidade: %s\n", nomeCidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosTuristicos1);
+
+    // -------------------------
+    // Exibição dos dados da Carta 2
+    // -------------------------
+    printf("\nCarta 2:\n");
+    printf("País: %s\n", pais2);
+    printf("Código: %s\n", codigo2);
+    printf("Cidade: %s\n", nomeCidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Pontos Turísticos: %d\n\n", pontosTuristicos2);
+
+    // -------------------------
+    // Comparação entre os PIBs
+    // -------------------------
+    printf("Comparando as cartas com base no PIB...\n");
+
+    if (pib1 > pib2) {
+        // Carta 1 vence
+        printf("Carta vencedora: %s (%s)\n", nomeCidade1, pais1);
+        printf("Motivo: PIB maior (%.2f bilhões) contra %.2f bilhões.\n", pib1, pib2);
+    } else if (pib2 > pib1) {
+        // Carta 2 vence
+        printf("Carta vencedora: %s (%s)\n", nomeCidade2, pais2);
+        printf("Motivo: PIB maior (%.2f bilhões) contra %.2f bilhões.\n", pib2, pib1);
+    } else {
+        // Empate
+        printf("Resultado: Empate! Ambas as cartas têm o mesmo PIB: %.2f bilhões de reais.\n", pib1);
+    }
+}
